@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pomodoro Timer...From Scratch. Here we go!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>A Pomodoro Clock</h1>
+			</div>
+		</div>
+
+		<div class="row top-row">
+			<div class="col-xs-6 text-primary">
+				<h3>Break</h3>
+				<button type="button" class="btn btn-link btn-sm" id="minusBreak">-</button>
+        		<button type="button" class="btn btn-link btn-lg" id="break-time"></button>
+        		<button type="button" class="btn btn-link btn-sm" id="plusBreak">+</button>
+			</div>
+			<div class="col-xs-6 text-primary">
+				<h3>Session</h3>
+				<button type="button" class="btn btn-link btn-sm" id="minusWork">-</button>
+        		<button type="button" class="btn btn-link btn-lg" id="work-time"></button>
+        		<button type="button" class="btn btn-link btn-sm" id="plusWork">+</button>
+			</div>
+		</div>
+
+		<div class="row text-primary">
+			<div class="circle">
+				<h4 id="session-name"></h4>
+				<p id="count-down"></p>
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div class="row clock-function">
+				<button type="button" id="reset">Reset</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
